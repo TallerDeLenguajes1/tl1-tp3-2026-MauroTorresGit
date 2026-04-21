@@ -62,7 +62,7 @@ int main () {
     mostrarPersonas(nombres, cant);
 
     int opcion = 0;
-    printf("Buscar personas:\n 1- Buscar por Id\n 2- Buscar por nombre");
+    printf("Buscar personas, elija una opcion:\n 1- Buscar por Id\n 2- Buscar por nombre\n");
     scanf("%d", &opcion);
 
     if (opcion == 1) {
@@ -81,7 +81,7 @@ int main () {
         } else {
             printf("Opcion no valida");
         }
-    } 
+    }
 
     for (int i = 0; i < cant; i++)
         free(nombres[i]);
